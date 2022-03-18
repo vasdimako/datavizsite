@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GISTEMP Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap" rel="stylesheet">    
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <script src="highlight.js"></script>
+        <div class="pagebody">
+            <div class="navbar_container">
+                <ul class="navigation">
+                    <li><a class="navlink" href="./index.html">GISTEMP Climate Spiral</a></li>
+                    <li><a class="navlink" href="./aboutme.html">About Me</a></li>
+                    <li><a class="navlink" href="./sources.html">Sources</a></li>
+                </ul>
+            </div>
+
+            <div class="videobox">
+                <video controls poster="">
+                    <source type="video/mp4" src="https://svs.gsfc.nasa.gov/vis/a000000/a004900/a004975/GISTEMP_Spiral_2022-03-06_2257.mp4" />
+                    Sorry, video not supported.
+                </video>
+            </div>
+
+            <div class="maintext">
+                <p>
+                    The visualization presented on this page is based on the GISS Surface Temperature Analysis (GISTEMP)<a href="./sources.html#nasa" class="ref">(1)</a>, which is an estimate of global temperature change.
+                    Even as climate change threatens to become irreversible, there is increasing skepticism in the validity of the concept, the extent of the danger or both. 
+                    In a 2021 <a href="https://climatecommunication.yale.edu/visualizations-data/ycom-us/">survey on climate change beliefs</a> , 19% of participants
+                    responded that global warming would harm future generations 'Little or not at all'. <a href="./sources.html#survey"class="ref">(2)</a>
+                    A well-informed public would apply pressure to regulatory bodies and governments to take measures against climate change.
+                </p>
+                <p>
+                    Because of this, it is important to create visualization methods that effectively communicate how rapidly climate change is affecting the planet, as well as its dangers. The 'climate spiral' 
+                    <a href="./sources.html#spiral" class="ref">(3)</a> presented above
+                    achieves this by showing the global fluctuations in temperature each month since 1880. An absolute change of one degree may not seem significant to the viewer, but a few degrees may be
+                    devastating to the planet. This visualization effectively communicates the significance of a one degree fluctuation in three ways:
+                </p>
+                <ul>
+                    <li>The relatively stable global temperatures of the years 1880-1980 feature prominently in the animation for a long time and in cool colours (whites and blues).</li>
+                    <li>As the fluctuations increase, the colour gradient used shifts to red, usually associated with high temperatures. In the last few seconds of the animation, the temperature
+                        fluctuations increase so that they are consistently close to 1 degree, represented by a bright red colour.
+                    </li>
+                    <li>At the end of the animation, the visualization shifts to a different dimension, showing the actual spiral. This drives home the point that fluctuations have increased dramatically
+                        in the last few years. 
+                    </li>
+                </ul>
+                <p>The climate spiral visualization does not demonstrate the effect of climate change on the planet, but it is an effective representation of how rapidly climate change is affecting global temperature.
+                    Crucially, it shows that a one degree change, which one might consider small, is significantly outside the normal temperature fluctuations in the preceding hundred years.
+                </p>
+            </div>
+            <footer>
+                <p class="footer">
+                    Author: Vasilis Dimakopoulos<br>
+                    <a href="mailto:vasdimako@gmail.com">vasdimako@gmail.com</a>
+                </p>
+            </footer>
+        </div>
+</body>
+</html>

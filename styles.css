@@ -14,10 +14,6 @@ body {
     width: 100%;
 }
 
-body.long {
-    height: 100vh;
-}
-
 .pagebody {
     background-color: white;
     position: relative;
@@ -162,7 +158,7 @@ footer {
     margin: auto;
 }
 
-footer.long {
+footer.strong {
     text-align: left;
     margin-left: 50px;
     padding: 15px;

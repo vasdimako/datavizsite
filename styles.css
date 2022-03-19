@@ -7,37 +7,24 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: grey;
     z-index: 0;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     position: absolute;
     width: 100%;
 }
 
 .pagebody {
-    background-color: white;
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-    height: 100%;
-}
-
-.navbar_container {
-    height: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    margin: auto;
+    flex-direction: column;
+    width: 70%;
+    /*min-width: 900px;*/
     background-color: white;
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    border-left-style: hidden;
-    border-right-style: hidden;
+    min-height: 100vh;
 }
 
 .navitem{
@@ -47,41 +34,59 @@ body {
 ul.navigation {
     display: flex;
     align-self: center;
-    align-items: center;
+    align-items: stretch;
+    position: sticky;
+    padding: 0;
+    top: 0;
+    z-index: 999;
+    background-color: white;
     justify-content: space-evenly;
     text-decoration: none;
-    height: 100%;
     font-weight: bold;
     font-size: xx-large;
     font-family: 'Bebas Neue', monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
-    list-style: none
+    list-style: none;
+
+    border-style: solid;
+    border-width: 10px 0px;
+    border-color: white;
 }
 
-ul.navigation li {
-    height: 100%;
+@media only screen and (max-width: 800px) {
+    ul.navigation {
+        flex-direction: column;
+    }
 }
+
 
 .navlink{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 50px;
+    padding: 20px 50px;
     height: 100%;
+
+    text-align: center;
+    line-height: 30px;
+
     font-weight: bold;
     font-size: xx-large;
     font-family: 'Bebas Neue', monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgb(0, 69, 149);
+
+    transition: 0.2s background-color;
 }
 
 .navigation li a.on, .navigation li a:hover{
+    transition: 0.2s background-color;
     background-color: rgb(0, 69, 149);
     color: white;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .videobox {

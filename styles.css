@@ -32,15 +32,12 @@ body {
 
 ul.navigation {
     display: flex;
-    align-self: center;
-    align-items: stretch;
-    justify-items: center;
     position: sticky;
     padding: 0;
     top: 0;
     z-index: 999;
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: center;
     text-decoration: none;
     font-weight: bold;
     font-size: xx-large;
@@ -51,10 +48,8 @@ ul.navigation {
     border-style: solid;
     border-width: 10px 0px;
     border-color: white;
-    width: 100%;
     list-style-position: inside;
     text-indent: 0px;
-    padding-left: 0px;
     line-height: 0px;
 }
 
@@ -119,6 +114,12 @@ video {
     display: flex;
 }
 
+@media only screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
 .ref {
     vertical-align: super;
     font-size: x-small;
@@ -159,9 +160,15 @@ img {
 
 .animationblock {
     display: flex;
-    margin: auto;
+    align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+    .animationblock {
+        flex-direction: column;
+    }
 }
 
 footer {
